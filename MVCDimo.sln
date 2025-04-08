@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dimo.PL", "Dimo.PL\Dimo.PL.csproj", "{A54966E3-460D-4769-B3A7-D451885C9F77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dimo.DAL", "Dimo.DAL\Dimo.DAL.csproj", "{BFE05FBD-939A-4D2B-A9D2-0465A4B0D8D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dimo.BLL", "Dimo.BLL\Dimo.BLL.csproj", "{E9AA9D2B-9EE3-40A2-AEB5-550335AF9356}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A54966E3-460D-4769-B3A7-D451885C9F77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A54966E3-460D-4769-B3A7-D451885C9F77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A54966E3-460D-4769-B3A7-D451885C9F77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A54966E3-460D-4769-B3A7-D451885C9F77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFE05FBD-939A-4D2B-A9D2-0465A4B0D8D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFE05FBD-939A-4D2B-A9D2-0465A4B0D8D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFE05FBD-939A-4D2B-A9D2-0465A4B0D8D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFE05FBD-939A-4D2B-A9D2-0465A4B0D8D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9AA9D2B-9EE3-40A2-AEB5-550335AF9356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9AA9D2B-9EE3-40A2-AEB5-550335AF9356}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9AA9D2B-9EE3-40A2-AEB5-550335AF9356}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9AA9D2B-9EE3-40A2-AEB5-550335AF9356}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C33F4156-2AD5-4FBD-A1CC-E41023A67380}
+	EndGlobalSection
+EndGlobal
