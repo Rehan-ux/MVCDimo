@@ -1,4 +1,4 @@
-namespace Dimo.PL.Models
+namespace Dimo.PL.ViewModels
 {
     public class ErrorViewModel
     {

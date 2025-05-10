@@ -1,5 +1,9 @@
-﻿using Dimo.DAL.Data.Configurations;
+﻿using Dimo.DAL.Data.Configurations; 
 using Dimo.DAL.Models;
+using Dimo.DAL.Models.DepartmentModels;
+using Dimo.DAL.Models.EmployeeModels;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -10,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace Dimo.DAL.Data
 {
-    public class AppDbContext:DbContext
+    public class AppDbContext:IdentityDbContext<ApplicationUser>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
@@ -27,9 +31,17 @@ namespace Dimo.DAL.Data
         {
             //modelBuilder.ApplyConfiguration<Department>(new DepartmentConfiguration());
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());//بستخدم دي علشان لوعندي method كتير
+            base.OnModelCreating(modelBuilder); //بعمل call لااني محتاجه flountAPI
+           // modelBuilder.Entity<IdentityUser>().ToTable("Users");
+           // modelBuilder.Entity<IdentityRole>().ToTable("Roles");  //لوعايزه اغير اسامي table
+
 
         }
         public DbSet<Department> Department { get; set; } //table قي الداتا 
-        public object Departments { get; internal set; }
+       // public object Departments { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+        //public DbSet<IdentityUser> Users { get; set; }//Dbset for genaric<int>
+       // public DbSet<IdentityRole> Roles { get; set; }
+
     }
 }

@@ -1,4 +1,4 @@
-using Dimo.PL.Models;
+using Dimo.PL.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
